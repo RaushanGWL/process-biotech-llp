@@ -7,7 +7,7 @@ const WhatIsChitosan: React.FC = () => {
   return (
     <section className="py-12 bg-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
           {/* Main Content Area */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -61,7 +61,7 @@ const WhatIsChitosan: React.FC = () => {
               <img 
                 src={powder} 
                 alt="Chitosan Macro" 
-                className="w-full h-auto rounded-[1.8rem] shadow-md object-cover"
+                className="w-full h-[500px] lg:h-[600px] rounded-[1.8rem] shadow-md object-cover"
               />
               {/* Floating Badge */}
               <div className="absolute -bottom-8 -right-8 bg-emerald-700 text-white p-8 rounded-3xl shadow-xl hidden md:block">

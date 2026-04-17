@@ -7,7 +7,7 @@ const AboutSection: React.FC = () => {
   return (
     <section className="py-12 bg-emerald-50/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1.0fr] gap-16 items-center">
           {/* Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -65,7 +65,7 @@ const AboutSection: React.FC = () => {
             <img 
               src={facility} 
               alt="Process Biotech Facility" 
-              className="w-full h-auto rounded-[2rem] shadow-2xl object-cover"
+              className="w-full h-[500px] lg:h-[600px] rounded-[2rem] shadow-2xl object-cover"
             />
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-emerald-50 hidden md:block">

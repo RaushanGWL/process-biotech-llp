@@ -12,7 +12,7 @@ const AboutHero: React.FC = () => {
           alt="About Facility" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-emerald-950/70 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-emerald-950/40 backdrop-blur-[1px]" />
       </div>
 
       {/* Content */}

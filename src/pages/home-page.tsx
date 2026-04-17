@@ -7,7 +7,6 @@ import VisionSection from '../components/home/vision-section';
 import ExpertiseSection from '../components/home/expertise-section';
 import LeadershipSection from '../components/home/leadership-section';
 import DiverseApplications from '../components/home/diverse-applications';
-import GetInTouch from '../components/home/get-in-touch';
 import Footer from '../components/footer';
 
 const HomePage: React.FC = () => {
@@ -21,7 +20,6 @@ const HomePage: React.FC = () => {
       <ExpertiseSection />
       <LeadershipSection />
       <DiverseApplications />
-      <GetInTouch />
       <Footer />
     </div>
   );

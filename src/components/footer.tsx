@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, User } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const Footer: React.FC = () => {
@@ -27,27 +27,37 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors text-sm">Home</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors text-sm">About Us</Link></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Products</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Applications</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-white transition-colors text-sm">Products</Link></li>
+              <li><Link to="/about#applications" className="text-gray-400 hover:text-white transition-colors text-sm">Applications</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">Contact</Link></li>
             </ul>
           </div>
 
           {/* Column 3: Contact Info */}
           <div>
             <h4 className="text-lg font-bold mb-8 text-emerald-400">Contact Details</h4>
-            <ul className="space-y-4">
+            <ul className="space-y-6">
               <li className="flex items-start gap-3 text-sm text-gray-400">
-                <MapPin className="w-5 h-5 text-emerald-400 shrink-0" />
-                <span>D-402, Rushiraj Harmony Apts.<br />Gangapur Road, Nashik - 422013</span>
+                <MapPin className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                <span>D-402, Rushiraj Harmony Apts.<br />Gangapur Road, Nashik, Maharashtra<br />PIN - 422013</span>
+              </li>
+              <li className="flex items-start gap-3 text-sm text-gray-400">
+                <User className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                <span>
+                  <span className="text-emerald-400/80 block text-xs uppercase font-bold tracking-wider mb-0.5 whitespace-nowrap">Contact Person</span>
+                  Mr. Mahim Sharma
+                </span>
               </li>
               <li className="flex items-center gap-3 text-sm text-gray-400">
                 <Phone className="w-5 h-5 text-emerald-400 shrink-0" />
                 <a href="tel:+919706955009" className="hover:text-white transition-colors">+91-9706955009</a>
               </li>
-              <li className="flex items-center gap-3 text-sm text-gray-400">
-                <Mail className="w-5 h-5 text-emerald-400 shrink-0" />
-                <a href="mailto:processbiotech@gmail.com" className="hover:text-white transition-colors">processbiotech@gmail.com</a>
+              <li className="flex items-start gap-3 text-sm text-gray-400">
+                <Mail className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                <div className="flex flex-col gap-1.5">
+                  <a href="mailto:processbiotech@gmail.com" className="hover:text-white transition-colors">processbiotech@gmail.com</a>
+                  <a href="mailto:mahim.processbiotech@gmail.com" className="hover:text-white transition-colors">mahim.processbiotech@gmail.com</a>
+                </div>
               </li>
             </ul>
           </div>

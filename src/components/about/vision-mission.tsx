@@ -20,7 +20,7 @@ const VisionMission: React.FC = () => {
             </div>
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Vision</h3>
             <p className="text-gray-600 text-2xl leading-relaxed italic font-serif">
-               "To become a trusted and leading supplier of bio-degradable products in India and globally through innovation, quality manufacturing and strong industry partnerships."
+               “To become a trusted and leading supplier of bio-degradable products in India and globally through innovation, quality manufacturing and strong industry partnerships.”
             </p>
           </motion.div>
         </div>

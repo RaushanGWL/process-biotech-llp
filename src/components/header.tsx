@@ -35,19 +35,17 @@ const Header: React.FC = () => {
             <a href="#" className="text-sm font-medium text-gray-600 hover:text-emerald-600 hover:border-b-2 hover:border-emerald-600 pb-1 transition-all">
               Applications
             </a>
-            <a href="#" className="text-sm font-medium text-gray-600 hover:text-emerald-600 hover:border-b-2 hover:border-emerald-600 pb-1 transition-all">
-              Team
-            </a>
-            <a href="#" className="text-sm font-medium text-gray-600 hover:text-emerald-600 hover:border-b-2 hover:border-emerald-600 pb-1 transition-all">
+
+            <Link to="/contact" className="text-sm font-medium text-gray-600 hover:text-emerald-600 hover:border-b-2 hover:border-emerald-600 pb-1 transition-all">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Action Button */}
           <div className="flex items-center">
-            <button className="bg-emerald-800 hover:bg-emerald-900 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-sm hover:shadow-md active:scale-95">
+            <Link to="/contact" className="bg-emerald-800 hover:bg-emerald-900 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-sm hover:shadow-md active:scale-95">
               Get in Touch
-            </button>
+            </Link>
           </div>
         </div>
       </div>
