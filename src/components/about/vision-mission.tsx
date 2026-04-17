@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Target, Flag } from 'lucide-react';
+import { Target } from 'lucide-react';
 
 const VisionMission: React.FC = () => {
   return (
