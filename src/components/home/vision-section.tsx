@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const VisionSection: React.FC = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-12 bg-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,7 +16,7 @@ const VisionSection: React.FC = () => {
             Our <span className="text-emerald-700">Vision</span>
           </h2>
           <p className="text-2xl md:text-3xl text-gray-700 font-medium italic leading-relaxed max-w-4xl mx-auto font-serif">
-            "To become a trusted and leading supplier of Chitosan in India, delivering sustainable solutions through innovation, quality manufacturing, and strong industry partnerships."
+            "To become a trusted and leading supplier of bio-degradable products in India and globally through innovation, quality manufacturing and strong industry partnerships."
           </p>
         </motion.div>
       </div>

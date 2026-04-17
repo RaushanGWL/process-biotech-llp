@@ -8,7 +8,7 @@ import founder4 from '../../assets/founder4.png';
 
 const LeadershipSection: React.FC = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-12 bg-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,33 +26,33 @@ const LeadershipSection: React.FC = () => {
           {[
             {
               name: "Mr. Pradeep Mundle",
-              role: "Founder & Technical Lead",
+              role: "Co-Founder & Technical Head",
               image: founder1,
-              edu: "B.Tech (Chemical Engineering), IIT Kanpur",
+              edu: "B.Tech (Chemical Engineering) IIT Kanpur",
               bio: "Over 40 years of experience in design and manufacture of special-purpose equipment for the chemical industry, with strong specialization in continuous solid-liquid separation systems.",
               linkedin: "#"
             },
             {
               name: "Ms. Amruta Bhombe",
-              role: "Founder",
+              role: "Co-Founder & Business Head",
               image: founder2,
-              edu: "B.E. (Instrumentation), MBA (University of Colorado), ISB Product Management",
+              edu: "B.E (Instrumentation, Mumbai University), M.B.A (University of Colorado, Denver), I.S.B - Product Management",
               bio: "Leads strategy, business development, relationship management, financial planning, and operations with strong cross-sectoral experience.",
               linkedin: "#"
             },
             {
               name: "Mr. Jaideep Tilak",
-              role: "Co-founder",
+              role: "Co-Founder & Operations Management",
               image: founder3,
               edu: "Captain, Merchant Navy",
-              bio: "Responsible for business development, regulatory compliance, and workshop operations with disciplined leadership background.",
+              bio: "Responsible for regulatory compliance, and workshop operations with disciplined leadership background.",
               linkedin: "#"
             },
             {
-              name: "Mahim Sharma",
-              role: "Marketing Head",
+              name: "Mr. Mahim Sharma",
+              role: "Business Development Manager",
               image: founder4,
-              edu: "B.Sc. in Biotechnology",
+              edu: "B.Sc, Biotechnology",
               bio: "Leads marketing initiatives with strong domain expertise in biotechnology and Chitosan applications, responsible for market development and customer engagement.",
               linkedin: "#"
             }

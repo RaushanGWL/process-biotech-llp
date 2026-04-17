@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-2xl">
           <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-[1.1]">
-            Sustainable <span className="text-emerald-400">Chitosan</span> Solutions for a <span className="text-emerald-400 underline underline-offset-8 decoration-emerald-200/30">Greener Future</span>
+            Powering <span className="text-emerald-400">Sustainability</span> with Bio-Based <span className="text-emerald-400 underline underline-offset-8 decoration-emerald-200/30">Molecules</span>
           </h1>
           
           <p className="mt-8 text-xl text-gray-100 leading-relaxed max-w-xl">
@@ -40,12 +40,12 @@ const HeroSection: React.FC = () => {
           {/* Micro-stats or trust signals */}
           <div className="mt-12 flex items-center gap-8 border-t border-white/20 pt-8">
             <div>
-              <p className="text-3xl font-bold text-white">15+</p>
+              <p className="text-3xl font-bold text-white">10+</p>
               <p className="text-sm text-gray-300 uppercase tracking-wider font-semibold">Years Experience</p>
             </div>
             <div className="w-px h-10 bg-white/20" />
             <div>
-              <p className="text-3xl font-bold text-white">50+</p>
+              <p className="text-3xl font-bold text-white">15+</p>
               <p className="text-sm text-gray-300 uppercase tracking-wider font-semibold">Product Range</p>
             </div>
             <div className="w-px h-10 bg-white/20" />

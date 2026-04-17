@@ -4,7 +4,7 @@ import powder from '../../assets/chitosan_powder.png';
 
 const AboutWhoWeAre: React.FC = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-12 bg-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
@@ -34,25 +34,25 @@ const AboutWhoWeAre: React.FC = () => {
             </h2>
             <div className="space-y-6 text-gray-600 text-lg leading-relaxed mb-12">
               <p>
-                Process Biotech LLP is a technology-driven manufacturing enterprise focused on high-performance Chitosan and its derivatives. Our commitment to sustainable innovation drives us to explore the vast potential of this marine-derived biopolymer.
+                Process Biotech LLP is a technology-driven manufacturing enterprise focused on high-performance molecules. Our commitment to sustainable innovation drives us to explore the vast potential of marine-derived biodegradable biopolymer.
               </p>
               <p>
-                With a state-of-the-art facility and a dedicated team of researchers, we provide customized solutions for agriculture, pharmaceuticals, and industrial applications globally, ensuring the highest standards of quality and purity.
+                With a state-of-the-art facility and a dedicated team of researchers, we provide customised solutions for agriculture, pharmaceuticals, and industrial applications globally, ensuring the highest standards of quality and purity.
               </p>
             </div>
 
             <div className="grid grid-cols-3 gap-8">
               <div>
-                <p className="text-4xl font-extrabold text-emerald-700">40+</p>
+                <p className="text-4xl font-extrabold text-emerald-700">100%</p>
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mt-2">Natural</p>
+              </div>
+              <div>
+                <p className="text-4xl font-extrabold text-emerald-700">15+</p>
                 <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mt-2">Products</p>
               </div>
               <div>
                 <p className="text-4xl font-extrabold text-emerald-700">8+</p>
-                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mt-2">Industries</p>
-              </div>
-              <div>
-                <p className="text-4xl font-extrabold text-emerald-700">100%</p>
-                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mt-2">Natural</p>
+                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mt-2">Industries Transformed</p>
               </div>
             </div>
           </motion.div>

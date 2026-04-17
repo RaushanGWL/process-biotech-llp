@@ -16,7 +16,7 @@ const ProductsPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-white overflow-hidden">
+    <div className="relative min-h-screen bg-slate-50 overflow-hidden">
       <Header />
       <ProductsHero />
       <WhatIsChitosan />

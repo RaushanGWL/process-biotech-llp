@@ -5,7 +5,7 @@ import facility from '../../assets/facility.png';
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="py-24 bg-emerald-50/30 relative overflow-hidden">
+    <section className="py-12 bg-emerald-50/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
@@ -20,7 +20,8 @@ const AboutSection: React.FC = () => {
             </h2>
             
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              Process Biotech LLP specializes in manufacturing <span className="font-semibold text-emerald-800">Plain (Acid-Soluble) Chitosan</span> and <span className="font-semibold text-emerald-800">Water-Soluble Chitosan</span>, serving multiple industries including agriculture, water treatment, pharmaceuticals, aquaculture, textiles, cosmetics, food coatings, and bioplastics.
+              <span className="font-semibold text-emerald-800">Specialised in manufacturing bio-based molecules.</span><br /><br />
+              Process Biotech LLP is a technology-driven manufacturing enterprise focused on high-performance molecules. Our commitment to sustainable innovation drives us to explore the vast potential of marine-derived biodegradable biopolymer. With a state-of-the-art facility and a dedicated team of researchers, we provide customised solutions for agriculture, pharmaceuticals, and industrial applications globally, ensuring the highest standards of quality and purity.
             </p>
 
             <div className="flex items-center gap-3 text-emerald-700 font-semibold mb-12">
@@ -33,9 +34,9 @@ const AboutSection: React.FC = () => {
             {/* Stats Grid for Desktop (Inside Text Area) */}
             <div className="hidden lg:grid grid-cols-3 gap-4">
               {[
-                { value: "40+", label: "Years Combined Experience" },
-                { value: "Multiple", label: "Industries Served" },
-                { value: "Custom", label: "Application-Oriented Solutions" }
+                { value: "100%", label: "Natural" },
+                { value: "15+", label: "Products" },
+                { value: "8+", label: "Industries Transformed" }
               ].map((stat, idx) => (
                 <motion.div
                   key={idx}
@@ -75,9 +76,9 @@ const AboutSection: React.FC = () => {
           {/* Mobile-only Stats Grid */}
           <div className="lg:hidden grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 w-full">
             {[
-              { value: "40+", label: "Years Combined Experience" },
-              { value: "Multiple", label: "Industries Served" },
-              { value: "Custom", label: "Application-Oriented Solutions" }
+              { value: "100%", label: "Natural" },
+              { value: "15+", label: "Products" },
+              { value: "8+", label: "Industries Transformed" }
             ].map((stat, idx) => (
               <div key={idx} className="p-8 rounded-2xl bg-white shadow-md border border-emerald-100 text-center">
                 <p className="text-3xl font-bold text-emerald-800">{stat.value}</p>
