@@ -6,8 +6,7 @@ const ProductForms: React.FC = () => {
   const forms = [
     { title: "Flakes", desc: "For large-scale water treatment and industrial filtration.", image: powder },
     { title: "Powder", desc: "Fine mesh sizes for agriculture and textile treatments.", image: powder },
-    { title: "Nano-Particles", desc: "Specialty grades for drug delivery and advanced research.", image: powder },
-    { title: "Pellets", desc: "Easy to handle, low-dust option for manufacturing.", image: powder }
+    { title: "Liquid", desc: "Solubilized formulations for precision dosing in industrial and agricultural processes.", image: powder }
   ];
 
   return (
@@ -25,7 +24,7 @@ const ProductForms: React.FC = () => {
           <div className="w-16 h-1 bg-emerald-600 mx-auto mt-6 rounded-full" />
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {forms.map((form, idx) => (
             <motion.div
               key={idx}

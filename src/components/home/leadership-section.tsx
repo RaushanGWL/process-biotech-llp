@@ -36,7 +36,7 @@ const LeadershipSection: React.FC = () => {
               name: "Ms. Amruta Bhombe",
               role: "Co-Founder & Business Head",
               image: founder2,
-              edu: "B.E (Instrumentation, Mumbai University), M.B.A (University of Colorado, Denver), I.S.B - Product Management",
+              edu: "B.E (Instrumentation, Mumbai University), M.B.A (University of Colorado, Denver), ISB - Product Management",
               bio: "Leads strategy, business development, relationship management, financial planning, and operations with strong cross-sectoral experience.",
               linkedin: "#"
             },

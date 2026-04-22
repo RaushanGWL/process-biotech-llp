@@ -23,7 +23,7 @@ const WhoWeAre: React.FC = () => {
           {[
             {
               title: "Manufacturing Excellence",
-              desc: "State-of-the-art facility in Nashik producing high-quality Chitosan with consistent quality and scalable production capabilities.",
+              desc: "Large-scale facility in Nashik producing high-quality Chitosan with consistent quality and scalable production capabilities.",
               icon: Factory,
               delay: 0.1
             },

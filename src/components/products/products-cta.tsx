@@ -1,7 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const ProductsCTA: React.FC = () => {
+interface ProductsCTAProps {
+  onOpenEnquiry?: () => void;
+}
+
+const ProductsCTA: React.FC<ProductsCTAProps> = ({ onOpenEnquiry }) => {
   return (
     <section className="py-12 bg-emerald-900 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -21,8 +25,11 @@ const ProductsCTA: React.FC = () => {
             <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-10 py-4 rounded-xl text-lg font-bold transition-all shadow-xl hover:shadow-emerald-500/20 active:scale-95">
               Contact Sales Team
             </button>
-            <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md px-10 py-4 rounded-xl text-lg font-bold transition-all active:scale-95">
-              Request Free Sample
+            <button 
+              onClick={onOpenEnquiry}
+              className="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md px-10 py-4 rounded-xl text-lg font-bold transition-all active:scale-95"
+            >
+              Request For Sample
             </button>
           </div>
         </motion.div>

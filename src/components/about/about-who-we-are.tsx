@@ -37,7 +37,7 @@ const AboutWhoWeAre: React.FC = () => {
                 Process Biotech LLP is a technology-driven manufacturing enterprise focused on high-performance molecules. Our commitment to sustainable innovation drives us to explore the vast potential of marine-derived biodegradable biopolymer.
               </p>
               <p>
-                With a state-of-the-art facility and a dedicated team of researchers, we provide customised solutions for agriculture, pharmaceuticals, and industrial applications globally, ensuring the highest standards of quality and purity.
+                With a large-scale facility and a dedicated team of researchers, we provide customised solutions for agriculture, pharmaceuticals, and industrial applications globally, ensuring the highest standards of quality and purity.
               </p>
             </div>
 
@@ -47,7 +47,7 @@ const AboutWhoWeAre: React.FC = () => {
                 <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mt-2">Natural</p>
               </div>
               <div>
-                <p className="text-4xl font-extrabold text-emerald-700">15+</p>
+                <p className="text-4xl font-extrabold text-emerald-700">5+</p>
                 <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mt-2">Products</p>
               </div>
               <div>

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const Header: React.FC = () => {
@@ -32,9 +34,9 @@ const Header: React.FC = () => {
             <Link to="/products" className="text-sm font-medium text-gray-600 hover:text-emerald-600 hover:border-b-2 hover:border-emerald-600 pb-1 transition-all">
               Products
             </Link>
-            <a href="#" className="text-sm font-medium text-gray-600 hover:text-emerald-600 hover:border-b-2 hover:border-emerald-600 pb-1 transition-all">
+            <Link to="/applications" className="text-sm font-medium text-gray-600 hover:text-emerald-600 hover:border-b-2 hover:border-emerald-600 pb-1 transition-all">
               Applications
-            </a>
+            </Link>
 
             <Link to="/contact" className="text-sm font-medium text-gray-600 hover:text-emerald-600 hover:border-b-2 hover:border-emerald-600 pb-1 transition-all">
               Contact
@@ -43,9 +45,21 @@ const Header: React.FC = () => {
 
           {/* Action Button */}
           <div className="flex items-center">
-            <Link to="/contact" className="bg-emerald-800 hover:bg-emerald-900 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-sm hover:shadow-md active:scale-95">
-              Get in Touch
-            </Link>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Link 
+                to="/contact" 
+                className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-emerald-400 to-emerald-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40"
+              >
+                Get in Touch
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                
+                {/* Subtle shine effect */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none" />
+              </Link>
+            </motion.div>
           </div>
         </div>
       </div>

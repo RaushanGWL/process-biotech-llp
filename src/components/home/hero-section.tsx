@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
             </div>
             <div className="w-px h-10 bg-white/20" />
             <div>
-              <p className="text-3xl font-bold text-white">15+</p>
+              <p className="text-3xl font-bold text-white">5+</p>
               <p className="text-sm text-gray-300 uppercase tracking-wider font-semibold">Product Range</p>
             </div>
             <div className="w-px h-10 bg-white/20" />

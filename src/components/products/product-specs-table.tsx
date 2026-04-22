@@ -3,13 +3,12 @@ import { motion } from 'framer-motion';
 
 const ProductSpecsTable: React.FC = () => {
   const specs = [
-    { property: "Appearance", plain: "Off-white to Pale Yellow Flakes/Powder", water: "Clear to Pale Yellow Solution" },
-    { property: "Deacetylation", plain: "≥ 85% / 90% / 95%", water: "≥ 90% / 95%" },
-    { property: "Viscosity (1% in 1% Acid)", plain: "20 - 2000 (Customizable)", water: "< 20 (Low Molecular Weight)" },
-    { property: "Solubility", plain: "Soluble in Dilute Organic Acids", water: "Instant Solubility in Water" },
-    { property: "Moisture Content", plain: "≤ 10%", water: "≤ 10%" },
-    { property: "Ash Content", plain: "≤ 1%", water: "≤ 0.5% (High Purity)" },
-    { property: "Heavy Metals", plain: "≤ 10 ppm", water: "≤ 5 ppm" }
+    { property: "Appearance", plain: "Off-White", water: "Off-White to Light Brown" },
+    { property: "Form", plain: "Flakes/Powder/Liquid", water: "Flakes/Powder/Liquid" },
+    { property: "Viscosity", plain: "50-80 cps (1% w/v solution)", water: "50-100 cps (10% w/v solution)" },
+    { property: "Solubility", plain: "Soluble in Acetic Acid solution", water: "Soluble in Water" },
+    { property: "Molecular Weight", plain: "<500 kDa", water: "<25 kDa" },
+    { property: "Moisture", plain: "<10%", water: "<10%" }
   ];
 
   return (

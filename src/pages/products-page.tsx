@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import ProductsHero from '../components/products/products-hero';
@@ -8,8 +8,11 @@ import ProductForms from '../components/products/product-forms';
 import AgriculturalSpecific from '../components/products/agricultural-specific';
 import ProductSpecsTable from '../components/products/product-specs-table';
 import ProductsCTA from '../components/products/products-cta';
+import EnquiryModal from '../components/enquiry-modal';
 
 const ProductsPage: React.FC = () => {
+  const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
+
   // Ensure we start at the top of the page on mount
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -24,8 +27,13 @@ const ProductsPage: React.FC = () => {
       <ProductForms />
       <AgriculturalSpecific />
       <ProductSpecsTable />
-      <ProductsCTA />
+      <ProductsCTA onOpenEnquiry={() => setIsEnquiryModalOpen(true)} />
       <Footer />
+
+      <EnquiryModal 
+        isOpen={isEnquiryModalOpen} 
+        onClose={() => setIsEnquiryModalOpen(false)} 
+      />
     </div>
   );
 };

@@ -36,16 +36,7 @@ const AgriculturalSpecific: React.FC = () => {
                   </li>
                ))}
             </ul>
-            <div className="flex flex-wrap items-center gap-12 border-t border-gray-100 pt-10">
-               <div>
-                  <p className="text-4xl font-bold text-emerald-800">25%</p>
-                  <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mt-1">Growth Increase</p>
-               </div>
-               <div>
-                  <p className="text-4xl font-bold text-emerald-800">20X</p>
-                  <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mt-1">Pathogen Defense</p>
-               </div>
-            </div>
+
           </motion.div>
 
           {/* Image Grid Area */}

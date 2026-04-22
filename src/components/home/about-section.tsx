@@ -21,7 +21,7 @@ const AboutSection: React.FC = () => {
             
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
               <span className="font-semibold text-emerald-800">Specialised in manufacturing bio-based molecules.</span><br /><br />
-              Process Biotech LLP is a technology-driven manufacturing enterprise focused on high-performance molecules. Our commitment to sustainable innovation drives us to explore the vast potential of marine-derived biodegradable biopolymer. With a state-of-the-art facility and a dedicated team of researchers, we provide customised solutions for agriculture, pharmaceuticals, and industrial applications globally, ensuring the highest standards of quality and purity.
+              Process Biotech LLP is a technology-driven manufacturing enterprise focused on high-performance molecules. Our commitment to sustainable innovation drives us to explore the vast potential of marine-derived biodegradable biopolymer. With a large-scale facility and a dedicated team of researchers, we provide customised solutions for agriculture, pharmaceuticals, and industrial applications globally, ensuring the highest standards of quality and purity.
             </p>
 
             <div className="flex items-center gap-3 text-emerald-700 font-semibold mb-12">
@@ -35,7 +35,7 @@ const AboutSection: React.FC = () => {
             <div className="hidden lg:grid grid-cols-3 gap-4">
               {[
                 { value: "100%", label: "Natural" },
-                { value: "15+", label: "Products" },
+                { value: "5+", label: "Products" },
                 { value: "8+", label: "Industries Transformed" }
               ].map((stat, idx) => (
                 <motion.div
@@ -77,7 +77,7 @@ const AboutSection: React.FC = () => {
           <div className="lg:hidden grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 w-full">
             {[
               { value: "100%", label: "Natural" },
-              { value: "15+", label: "Products" },
+              { value: "5+", label: "Products" },
               { value: "8+", label: "Industries Transformed" }
             ].map((stat, idx) => (
               <div key={idx} className="p-8 rounded-2xl bg-white shadow-md border border-emerald-100 text-center">
