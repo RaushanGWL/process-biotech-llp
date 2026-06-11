@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Sprout, CheckCircle, Leaf } from 'lucide-react';
-import powder from '../../assets/chitosan_powder.png';
+import powder from '../../assets/chitosan_powder.jpg';
 import facility from '../../assets/facility.png';
 
 const AgriculturalSpecific: React.FC = () => {

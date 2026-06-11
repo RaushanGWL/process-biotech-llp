@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Microscope, Beaker, Globe } from 'lucide-react';
-import powder from '../../assets/chitosan_powder.png';
+import powder from '../../assets/chitosan_powder.jpg';
 
 const SpecialtyPolymer: React.FC = () => {
   const categories = [

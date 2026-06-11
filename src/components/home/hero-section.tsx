@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import bgVideo from '../../assets/biotech_bg_video.mp4';
 
 const HeroSection: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative min-h-[100svh] w-full flex items-center pt-28 pb-24">
       {/* Video Overlay */}
@@ -31,10 +33,10 @@ const HeroSection: React.FC = () => {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <button className="bg-emerald-800 hover:bg-emerald-900 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg hover:shadow-emerald-200 hover:-translate-y-1 active:translate-y-0">
+            <button onClick={() => navigate('/products')} className="bg-emerald-800 hover:bg-emerald-900 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg hover:shadow-emerald-200 hover:-translate-y-1 active:translate-y-0">
               Explore Products
             </button>
-            <button className="bg-white border-2 border-emerald-800 text-emerald-800 hover:bg-emerald-50 px-8 py-4 rounded-lg text-lg font-bold transition-all hover:-translate-y-1 active:translate-y-0">
+            <button onClick={() => navigate('/contact')} className="bg-white border-2 border-emerald-800 text-emerald-800 hover:bg-emerald-50 px-8 py-4 rounded-lg text-lg font-bold transition-all hover:-translate-y-1 active:translate-y-0">
               Download Brochure
             </button>
           </div>

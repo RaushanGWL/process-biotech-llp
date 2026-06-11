@@ -1,10 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
-import powder from '../../assets/chitosan_powder.png';
+import powder from '../../assets/chitosan_powder.jpg';
 import facility from '../../assets/facility.png';
 
 const ProductRange: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-12 bg-emerald-50/30 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,7 +50,7 @@ const ProductRange: React.FC = () => {
                   </li>
                 ))}
               </ul>
-              <button className="w-full bg-emerald-700 hover:bg-emerald-800 text-white py-4 rounded-xl font-bold transition-all active:scale-[0.98]">
+              <button onClick={() => navigate('/contact#form')} className="w-full bg-emerald-700 hover:bg-emerald-800 text-white py-4 rounded-xl font-bold transition-all active:scale-[0.98]">
                 Request Datasheet
               </button>
             </div>
@@ -80,7 +82,7 @@ const ProductRange: React.FC = () => {
                   </li>
                 ))}
               </ul>
-              <button className="w-full border-2 border-emerald-700 text-emerald-700 hover:bg-emerald-50 py-4 rounded-xl font-bold transition-all active:scale-[0.98]">
+              <button onClick={() => navigate('/applications')} className="w-full border-2 border-emerald-700 text-emerald-700 hover:bg-emerald-50 py-4 rounded-xl font-bold transition-all active:scale-[0.98]">
                 Explore Applications
               </button>
             </div>

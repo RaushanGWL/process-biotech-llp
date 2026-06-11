@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Droplets, Zap, Factory } from 'lucide-react';
-import powder from '../../assets/chitosan_powder.png';
+import powder from '../../assets/chitosan_powder.jpg';
 
 const WhatIsChitosan: React.FC = () => {
   return (

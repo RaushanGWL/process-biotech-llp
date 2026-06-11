@@ -1,12 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import flakes from '../../assets/chitosan_flakes.png';
 import powder from '../../assets/chitosan_powder.png';
+import liquid from '../../assets/chitosan_liquid.png';
 
 const ProductForms: React.FC = () => {
   const forms = [
-    { title: "Flakes", desc: "For large-scale water treatment and industrial filtration.", image: powder },
+    { title: "Flakes", desc: "For large-scale water treatment and industrial filtration.", image: flakes },
     { title: "Powder", desc: "Fine mesh sizes for agriculture and textile treatments.", image: powder },
-    { title: "Liquid", desc: "Solubilized formulations for precision dosing in industrial and agricultural processes.", image: powder }
+    { title: "Liquid", desc: "Solubilized formulations for precision dosing in industrial and agricultural processes.", image: liquid }
   ];
 
   return (
@@ -35,8 +37,8 @@ const ProductForms: React.FC = () => {
               whileHover={{ y: -8 }}
               className="bg-emerald-50/50 p-8 rounded-3xl border border-emerald-100/50 shadow-sm hover:shadow-xl transition-all group flex flex-col items-center"
             >
-              <div className="w-24 h-24 bg-white p-2 rounded-full shadow-lg border border-emerald-100 flex items-center justify-center overflow-hidden mb-8 group-hover:scale-110 transition-transform">
-                <img src={form.image} alt={form.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all opacity-80" />
+              <div className="w-24 h-24 bg-white rounded-full shadow-lg border border-emerald-100 flex items-center justify-center overflow-hidden mb-8 group-hover:scale-110 transition-transform">
+                <img src={form.image} alt={form.title} className="w-full h-full object-cover scale-[1.2]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-emerald-800 transition-colors">
                 {form.title}

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import ContactHero from '../components/contact/contact-hero';
@@ -7,10 +8,19 @@ import ContactForm from '../components/contact/contact-form';
 import LeadershipSection from '../components/home/leadership-section';
 
 const ContactPage: React.FC = () => {
-  // Ensure we start at the top of the page on mount
+  const location = useLocation();
+
+  // Ensure we start at the top of the page on mount, or scroll to hash
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    if (location.hash === '#form') {
+      setTimeout(() => {
+        const el = document.getElementById('form');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
 
   return (
     <div className="relative min-h-screen bg-slate-50 overflow-hidden">

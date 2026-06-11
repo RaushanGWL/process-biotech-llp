@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import powder from '../../assets/chitosan_powder.png';
+import powder from '../../assets/chitosan_powder.jpg';
 
 const AboutWhoWeAre: React.FC = () => {
   return (
