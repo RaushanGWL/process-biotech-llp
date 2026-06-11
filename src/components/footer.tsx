@@ -11,10 +11,9 @@ const Footer: React.FC = () => {
           {/* Column 1: Logo & Info */}
           <div className="space-y-8">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center overflow-hidden">
-                <img src={logo} alt="Logo" className="w-7 h-7 object-contain" />
+              <div className="bg-white/90 p-2 rounded-xl flex items-center justify-center overflow-hidden mb-2">
+                <img src={logo} alt="Logo" className="h-16 w-auto object-contain" />
               </div>
-              <span className="text-xl font-bold tracking-tight">Process Biotech <span className="text-emerald-400">LLP</span></span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Leading the way in sustainable Chitosan solutions, pioneering eco-friendly alternatives for a greener world.

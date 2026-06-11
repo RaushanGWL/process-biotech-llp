@@ -1,18 +1,20 @@
 import React from 'react';
+import bgVideo from '../../assets/biotech_bg_video.mp4';
 
 const HeroSection: React.FC = () => {
   return (
     <section className="relative h-screen w-full flex items-center pt-20">
       {/* Video Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <iframe
-          className="absolute min-w-full min-h-full object-cover scale-105 pointer-events-none"
-          src="https://www.youtube.com/embed/St6yHwKKesQ?autoplay=1&mute=1&loop=1&playlist=St6yHwKKesQ&controls=0&modestbranding=1&rel=0&iv_load_policy=3&playsinline=1"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute w-full h-full object-cover pointer-events-none"
+        >
+          <source src={bgVideo} type="video/mp4" />
+        </video>
         {/* Subtle Dark Overlay for Readability */}
         <div className="absolute inset-0 bg-black/30 z-10" />
       </div>

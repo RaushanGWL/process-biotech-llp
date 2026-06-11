@@ -11,16 +11,13 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo Section */}
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div className="w-10 h-10 flex items-center justify-center bg-emerald-50 rounded-lg overflow-hidden">
+            <div className="flex items-center justify-center overflow-hidden py-2">
               <img 
                 src={logo} 
                 alt="Process Biotech Logo" 
-                className="w-8 h-8 object-contain"
+                className="h-14 w-auto object-contain"
               />
             </div>
-            <span className="text-xl font-bold text-gray-900 tracking-tight">
-              Process Biotech <span className="text-emerald-600">LLP</span>
-            </span>
           </Link>
 
           {/* Navigation Section */}
