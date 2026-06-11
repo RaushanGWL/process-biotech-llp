@@ -3,7 +3,7 @@ import bgVideo from '../../assets/biotech_bg_video.mp4';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative h-screen w-full flex items-center pt-20">
+    <section className="relative min-h-[100svh] w-full flex items-center pt-28 pb-24">
       {/* Video Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
@@ -40,18 +40,18 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* Micro-stats or trust signals */}
-          <div className="mt-12 flex items-center gap-8 border-t border-white/20 pt-8">
-            <div>
+          <div className="mt-12 flex flex-wrap items-center gap-6 sm:gap-8 border-t border-white/20 pt-8">
+            <div className="min-w-[140px]">
               <p className="text-3xl font-bold text-white">10+</p>
               <p className="text-sm text-gray-300 uppercase tracking-wider font-semibold">Years Experience</p>
             </div>
-            <div className="w-px h-10 bg-white/20" />
-            <div>
+            <div className="hidden sm:block w-px h-10 bg-white/20" />
+            <div className="min-w-[140px]">
               <p className="text-3xl font-bold text-white">5+</p>
               <p className="text-sm text-gray-300 uppercase tracking-wider font-semibold">Product Range</p>
             </div>
-            <div className="w-px h-10 bg-white/20" />
-            <div>
+            <div className="hidden sm:block w-px h-10 bg-white/20" />
+            <div className="min-w-[140px]">
               <p className="text-3xl font-bold text-white">Global</p>
               <p className="text-sm text-gray-300 uppercase tracking-wider font-semibold">Export Network</p>
             </div>
